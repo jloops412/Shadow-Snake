@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shadow Protocol: Tactical Command",
+  title: "Shadow Snake: Command Rex",
   description:
-    "A mobile-first tactical espionage RTS prototype. Infiltrate, build, and destroy the Cipher command core.",
+    "A mobile-first tactical espionage RTS. Command Shadow Snake, build a forward base, infiltrate hostile territory, and seize the command network.",
   other: {
     "codex-preview": "development",
   },
@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#020504",
 };
 
 export default function RootLayout({
